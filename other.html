@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Christchurch</title>
+
+    <!-- Bootstrap -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arapey|Fauna+One|Noticia+Text" rel="stylesheet">
+
+    <style>
+      body {
+        background-color: #000000;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="container-fluid">
+
+      <img class="img-responsive" src="images/redblue.png" alt="HeadImage">
+
+        <div class="row blurb">
+          <h3>On November 14, 2016, an earthquake with a magnitude of 7.8 struck the south island of New Zealand and lasted over a minute.</h3>
+        </div>
+
+        <ul class="tab visible-xs visible-sm">
+          <li><a href="javascript:void(0)" class="tablinks" onclick="openContent(event, 'maps')" id="defaultOpen">Map</a></li>
+          <li><a href="javascript:void(0)" class="tablinks" onclick="openContent(event, 'twitter')">Twitter</a></li>
+          <li><a href="javascript:void(0)" class="tablinks" onclick="openContent(event, 'theGuardian')">The Guardian</a></li>
+        </ul>
+
+        <div id="maps" class="tabcontent">
+            <div id="map"></div>
+        </div>
+
+        <div id="twitter" class="tabcontent">
+          <h3>Paris</h3>
+          <p>Paris is the capital of France.</p>
+        </div>
+
+        <div id="theGuardian" class="tabcontent">
+          <h3>Tokyo</h3>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+
+        <div class="row twittermaps">
+          <div class="col-md-4 twitter hidden-xs hidden-sm visible-md visible-lg">
+            <iframe src="twitter.php" width="200" height="500"></iframe>
+          </div>
+          <div class ="col-md-8 google-maps hidden-xs hidden-sm visible-md visible-lg">
+            <div id="map"></div>
+          </div>
+        </div>
+
+        <div class="row guardian hidden-xs hidden-sm visible-md visible-lg">
+            <p>potato</p>
+            <p>tomato</p>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVHp0tcoEwLqyDqnBaV0WEBTXP6KaAZdw&libraries=visualization&callback=initMap">
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mapscripts.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
